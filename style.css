@@ -1,0 +1,169 @@
+td {
+  border:1px solid #4A1414;
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+}
+
+th{
+  font-size: 30px;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  font-family: 'Hubballi', cursive;
+  /* font-family:  'Acme', serif; */
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  font-family:  'Acme', serif;
+  text-decoration: none;
+}
+
+p{
+
+  color: white;
+  margin: 20px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  justify-content: baseline;
+}
+
+.anim{
+  animation-duration: 3s;
+  animation-name: slidein;
+  overflow:hidden
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.myDiv:hover{
+  transition: all 2s ease-in-out;
+  transform: rotate(360deg);
+
+}
+
+a:hover {
+  color: #E7E9EB;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* h2{
+  color: #E846C3;
+  border: 5px solid grey;
+  font-family: 'Yuji Boku', serif;
+  font-size: 30px;
+  text-align: center;
+} */
+
+
+/*p {
+  color: #A61083;
+  font-family: 'Yuji Boku', serif;
+  line-height: 20px;
+  border: 5px solid purple;
+  padding: 2px;
+  height: 220px;
+  width: 700px;
+  border-radius: 20px;
+}*/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+#my_name{
+  align-self: center;
+}
+/*div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 10px;
+    /*color: #E7E9EB;
+}*/
+
+img{
+  align-content: center;
+  float: left;
+  border-radius: 100px;
+}
+
+.footer{
+  /* clear: both; */
+  text-align: center;
+  font-family: 'Acme', serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+section{
+
+  background-color: grey;
+  width: 1000px;
+  height: 60px;
+
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+  margin-right: 20px;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight:bold;
+  color: #4A1414;
+}
+
+/* .zone {
+position: fixed; 
+left: 0;
+bottom: 0;
+width: 100%;
+color: black;
+text-align: center;
+} */
+
+/*left position*/
+.tooltipleft{
+  position: relative;
+  display: inline-block;
+  }
+
+.tooltipleft .toolttextleft {
+  visibility: hidden;
+  width: 200px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 5px ;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+}
+
+.tooltipleft:hover .toolttextleft {
+  visibility: visible;
+}
